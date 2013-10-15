@@ -62,6 +62,10 @@ public class ReversedHoloXposed implements  IXposedHookLoadPackage
 //    	{
 //    		setWhiteTheme("com.android.gallery3d.app.Gallery", lpparam);
 //    	}
+    	else if (lpparam.packageName.equals("com.android.mms"))
+    	{
+    		setWhiteTheme("com.android.mms.ui.ComposeMessageActivity", lpparam);
+    	}
     	else
     		return;
     	
